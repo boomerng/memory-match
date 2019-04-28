@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import utils from './utils';
+
 import './App.css';
 
-function App() {
+const App = () => {
+  const [cards, setCards] = useState(utils.random(1, 5));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {utils.range(1, cards).map(c => 
+        <h1 key={c} className="h1">{c}</h1>
+      )}
     </div>
   );
 }
