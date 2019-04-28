@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  width: inherit;
+}
+
+.Card-container {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.Margin-Center {
+  margin: 0 auto;
 }
 
 .App-logo {
