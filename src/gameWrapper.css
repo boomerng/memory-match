@@ -1,0 +1,19 @@
+.GameWrapper {
+    text-align: center;
+    width: inherit;
+  }
+  
+  .Card-container {
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  .Margin-Center {
+    margin: 0 auto;
+  }
+
+  .h1 {
+    float:left;
+    margin: 20px;
+    cursor: pointer;
+  }
